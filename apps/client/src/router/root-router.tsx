@@ -1,12 +1,12 @@
-import { Link, Outlet, createBrowserRouter } from 'react-router-dom';
 import { Box, Button } from '@chakra-ui/react';
+import { Link, Outlet, createBrowserRouter } from 'react-router-dom';
 
 export const rootRouter = createBrowserRouter([
   {
     path: '/',
     element: (
       <Box>
-        <Box role="navigation" bg='blackAlpha.400' p={6}>
+        <Box role="navigation" bg="blackAlpha.400" p={6}>
           <ul>
             <Button mr={4}>
               <Link to="/">Home</Link>
@@ -26,24 +26,19 @@ export const rootRouter = createBrowserRouter([
           <Box>
             This is the generated root route.{' '}
             <Link to="/page-2">
-              <Button >
-                Click here for page 2.
-              </Button>
+              <Button>Click here for page 2.</Button>
             </Link>
           </Box>
-
-        )
+        ),
       },
       {
         path: '/page-2',
         element: (
           <Link to="/">
-            <Button >
-              Click here to go back to root page.
-            </Button>
+            <Button>Click here to go back to root page.</Button>
           </Link>
-        )
-      }
-    ]
-  }
-])
+        ),
+      },
+    ],
+  },
+]);

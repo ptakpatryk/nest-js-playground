@@ -1,5 +1,4 @@
 import { render } from '@testing-library/react';
-
 import { BrowserRouter } from 'react-router-dom';
 
 import App from './app';
@@ -9,7 +8,7 @@ describe('App', () => {
     const { baseElement } = render(
       <BrowserRouter>
         <App />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     expect(baseElement).toBeTruthy();
   });
@@ -18,7 +17,7 @@ describe('App', () => {
     const { getByText } = render(
       <BrowserRouter>
         <App />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     expect(getByText(/Welcome client/gi)).toBeTruthy();
   });

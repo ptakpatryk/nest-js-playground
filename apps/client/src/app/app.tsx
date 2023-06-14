@@ -28,7 +28,7 @@ export function App() {
           <Route
             path="/page-2"
             element={
-              <Button bg='red.600'>
+              <Button bg="red.600">
                 <Link to="/">Click here to go back to root page.</Link>
               </Button>
             }
@@ -36,9 +36,7 @@ export function App() {
         </Routes>
         {/* END: routes */}
       </div>
-      <Button>
-        Siema
-      </Button>
+      <Button>Siema</Button>
     </Box>
   );
 }
